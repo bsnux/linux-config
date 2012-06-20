@@ -37,6 +37,7 @@ alias gst='git status'
 alias gco='git commit -m'
 alias ga='git add'
 alias glog='git log'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gdiff='git diff'
 alias gp='git pull'
 alias git="git-achievements"
