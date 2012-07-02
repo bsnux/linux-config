@@ -50,8 +50,9 @@ function parse_git_branch {
 function proml {
   local       GREEN="\[\033[0;32m\]"
   local       WHITE="\[\033[0;37m\]"
+  local       RED="\[\033[0;31m\]"
 
-PS1="[\u@\h \w$GREEN\$(parse_git_branch)]$WHITE\$ "
+PS1="[\u@\h \w($RED\$(~/.rvm/bin/rvm-prompt))$GREEN\$(parse_git_branch)]$WHITE\$ "
 PS2='> '
 PS4='+ '
 }
