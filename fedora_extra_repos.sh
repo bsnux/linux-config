@@ -7,12 +7,15 @@ name=google-chrome - 64-bit
 baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 enabled=1
 gpgcheck=1
-gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/chrome.repo
+
+# Adobe
+echo "
 [adobe-linux-i386]
 name=Adobe Systems Incorporated
 baseurl=http://linuxdownload.adobe.com/linux/i386/
 enabled=1
-gpgcheck=0" > /etc/yum.repos.d/chrome.repo
+gpgcheck=0" > /etc/yum.repos.d/adobe.repo
 
 # Cinnamon desktop
 echo "
